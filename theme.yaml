@@ -70,7 +70,7 @@ form:
             kvk_nummer:                            
                 type: text
                 tab: 'Bedrijfsgegevens'
-                default: '76113884'
+                default: '00000000'
             # TABBLAD Kleurenschema
             theme_primary_color:
                 label: 'Primary color'
