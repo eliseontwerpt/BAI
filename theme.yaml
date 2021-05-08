@@ -1,0 +1,105 @@
+name: BAI
+description: 'Theme by Eliseontwerpt.nl'
+author: EliseOntwerpt
+homepage: eliseontwerpt.nl
+author_code: eliseontwerpt
+code: EliseOntwerpt
+parent: ''
+database: '0'
+form:
+    tabs:
+        fields:
+            # TABBLAD Main
+            theme_site_name:
+                label: 'Naam Website'
+                comment: 'The website name as it should appear on the front-end'
+                default: 'Biological Archaeological Innovations'
+                tab: 'Main'
+            theme_background_image:
+                label: 'Achtergrond Homepagina'
+                type: mediafinder
+                mode: image
+                tab: 'Main'
+            theme_logo_nl:
+                label: Logo
+                type: mediafinder
+                mode: image
+                tab: 'Main'
+            theme_logo_uk:
+                label: Logo
+                type: mediafinder
+                mode: image
+                tab: 'Main'
+            # TABBLAD Bedrijfsgegevens
+            emailadres:
+                label: 'E-mail'
+                default: 'bai@bai.nl'
+                tab: 'Bedrijfsgegevens'
+            bedrijfsnaam_details_section:
+                label: Aanschrijftitel
+                type: section
+                tab: 'Bedrijfsgegevens'
+            uk_naam:
+                label: 'Engels'
+                type: text
+                tab: 'Bedrijfsgegevens'
+                default: 'Biological Archaeological Innovations BV'
+            nl_naam:
+                label: 'Nederlands'
+                type: text
+                tab: 'Bedrijfsgegevens'
+                default: 'BAI bv.'
+            user_details_section:
+                label: Adres gegevens
+                type: section
+                tab: 'Bedrijfsgegevens'
+            adres_straat:
+                label: 'Straat'
+                type: text
+                tab: 'Bedrijfsgegevens'
+                default: 'Kadijk 4'
+            adres_postcode_plaats:
+                label: 'Postcode Plaats'
+                type: text
+                tab: 'Bedrijfsgegevens'
+                default: '9747 AT Groningen'            
+            kvk_details_section:
+                label: Kvk nummer
+                type: section
+                tab: 'Bedrijfsgegevens'
+            kvk_nummer:                            
+                type: text
+                tab: 'Bedrijfsgegevens'
+                default: '76113884'
+            # TABBLAD Kleurenschema
+            theme_primary_color:
+                label: 'Primary color'
+                type: colorpicker
+                assetVar: primary-color
+                tab: 'Kleurenschema'
+            theme_secondary_color:
+                label: 'Secondary color'
+                type: colorpicker
+                assetVar: secondary-color
+                tab: 'Kleurenschema'
+            theme_third_color:
+                label: 'Third color'
+                type: colorpicker
+                assetVar: third-color
+                tab: 'Kleurenschema'
+            theme_navbar_color:
+                label: 'Color navbar'
+                type: colorpicker
+                assetVar: navbar-color
+                tab: 'Kleurenschema'
+            theme_footer_color:
+                label: 'Color navbar'
+                type: colorpicker
+                assetVar: footer-color
+                tab: 'Kleurenschema'       
+
+                
+require:
+    - RainLab.Translate
+    - RainLab.Blog
+    - Martin.Forms

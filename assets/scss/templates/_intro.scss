@@ -1,0 +1,36 @@
+// Intro Section
+.intro{
+	.fr-fic {
+		height: 200px;
+		//min-width: 100%;
+	}
+
+}
+.intro-item{
+
+	i{
+		font-size:60px;
+		line-height: 60px;
+	}
+
+
+	
+
+}
+
+.color-one{
+	color: $primary-color;
+}
+.color-two{
+	color: #00d747;
+}
+.color-three{
+	color:#9262ff;
+}
+.color-four{
+	color:#088ed3;
+}
+.intro.btn{
+   margin-top: 20px;
+   margin-bottom: 20px;
+    }
