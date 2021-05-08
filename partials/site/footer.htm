@@ -22,7 +22,11 @@ function onStart()
 				<div class="widget">
 					<h4 class="text-capitalize mb-4"></h4>
 					<div class="logo mb-4">
-					    <img src="{{ this.theme.theme_logo|media }}" class="img-fluid w-50">						
+					    {% if activeLocale == 'nl' and this.theme.theme_logo_nl is not empty %}
+							<img src="{{ this.theme.theme_logo_nl|media }}" class="img-fluid w-50">
+						{% else %}
+							<img src="{{ this.theme.theme_logo_uk|media }}" class="img-fluid w-50">
+						{% endif %}						
 					</div>
 				</div>
 			</div>

@@ -20,13 +20,15 @@ form:
                 type: mediafinder
                 mode: image
                 tab: 'Main'
-            theme_logo_nl:
-                label: Logo
+            theme_logo_uk:
+                label: 'Logo'
+                comment: 'Logo van de website.'
                 type: mediafinder
                 mode: image
                 tab: 'Main'
-            theme_logo_uk:
-                label: Logo
+            theme_logo_nl:
+                label: 'Nederlands Logo'
+                comment: 'Dit logo is alleen nodig als het logo Tweetalig is.'
                 type: mediafinder
                 mode: image
                 tab: 'Main'
