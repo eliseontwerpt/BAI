@@ -4,6 +4,9 @@
     "description": "Theme by Eliseontwerpt.nl",
     "require": {
         "composer/installers": "~1.0",
-        "rainlab/translate-plugin": "~1.0"
+        "rainlab/translate-plugin": "~1.0",
+        "rainlab/blog-plugin": "~1.0",
+        "skydiver/october-plugin-forms": "~1.0",
+        "anand-patel/oc-wysiwyg-editors": "~1.0" 
     }
 }
