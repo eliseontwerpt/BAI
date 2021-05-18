@@ -44,8 +44,10 @@ function onStart()
 					<div class="logo mb-4">
 					    {% if activeLocale == 'nl' and this.theme.theme_logo_nl is not empty %}
 							<img src="{{ this.theme.theme_logo_nl|media }}" class="img-fluid w-75">
-						{% else %}
+						{% elseif this.theme.theme_logo_uk is not empty %}
 							<img src="{{ this.theme.theme_logo_uk|media }}" class="img-fluid w-75">
+						{% else %}
+							<img src="{{ 'assets/images/logo.png'|theme }}" class="img-fluid w-75">
 						{% endif %}						
 					</div>
 				</div>

@@ -90,16 +90,19 @@ form:
                 label: 'Third color'
                 type: colorpicker
                 assetVar: third-color
+                default: '#434241'
                 tab: 'Kleurenschema'
             theme_navbar_color:
                 label: 'Color navbar'
                 type: colorpicker
                 assetVar: navbar-color
+                default: '#ECF0F1'
                 tab: 'Kleurenschema'
             theme_footer_color:
                 label: 'Color navbar'
                 type: colorpicker
                 assetVar: footer-color
+                default: '#085737'
                 tab: 'Kleurenschema'       
 
                 
