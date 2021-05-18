@@ -15,35 +15,27 @@ description = "Intro Partial"
 		</div>		
 		<div class="container-fluid">
 			<div class="row portfolio-gallery">
-				<div class="col-lg-4 col-md-6">
-			    	<h3 class="text-center">{{ 'Training courses'|_ }}</h3>				
-					<a class="nav-link" href="{{ 'trainingscourses'|page }}">
-						<img src="/storage/app/media/foto-projecten-pag1.jpg" alt="" class="img-fluid w-100">
+				<div class="col-lg-4 col-md-6 col">
+			    	<h3 class="text-center">{{ 'Training courses'|_ }}</h3>
 						<div class="portfolio-item-content">
 							{% content 'home/intro/training-courses' %}
-						</div>
-					</a>
-					<a href="{{ 'trainingscourses'|page }}" class="intro btn btn-small btn-main btn-round-full" >{{ 'Read More'|_ }}</a>
+						</div>					
+					<a href="{{ 'trainingscourses'|page }}" class="btn btn-small btn-main btn-round-full text-center" >{{ 'Read More'|_ }}</a>
 			</div>
-			<div class="col-lg-4 col-md-6">
+			<div class="col-lg-4 col-md-6 col">
 			    <h3 class="text-center">{{ 'Research'|_ }}</h3>
-
-						<a class="nav-link" href="{{ 'research'|page }}">
-						<img src="/storage/app/media/foto-evaluations-pag_1.jpg" alt="" class="img-fluid w-100">
 						<div class="portfolio-item-content">							
 							{% content 'home/intro/research' %}
 						</div>
-					<a href="{{ 'research'|page }}" class="intro btn btn-small btn-main btn-round-full">{{ 'Read More'|_ }}</a>
+					<a href="{{ 'research'|page }}" class="btn btn-small btn-main btn-round-full">{{ 'Read More'|_ }}</a>
 			</div>
-			<div class="col-lg-4 col-md-6">
+			<div class="col-lg-4 col-md-6 col">
 			    <h3 class="text-center">{{ 'Products'|_ }}</h3>
-						<a class="nav-link" href="{{ 'blog'|page }}">
-						<img src="/storage/app/media/foto-producten-pag1.jpg" alt="" class="img-fluid w-100">
 						<div class="portfolio-item-content">
 							{% content 'home/intro/products' %}
 						</div>
 
-					<a href="{{ 'blog'|page }}" class="intro btn btn-small btn-main btn-round-full">{{ 'Read More'|_ }}</a>					
+					<a href="{{ 'blog'|page }}" class="btn btn-small btn-main btn-round-full">{{ 'Read More'|_ }}</a>					
 
 			</div>
 		</div>

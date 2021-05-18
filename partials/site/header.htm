@@ -9,17 +9,19 @@ description = "Header with TopBar and Navigation"
 		<div class="container">
 		  <a class="navbar-brand" href="{{ 'home'|page }}">		  	
 		    {% if activeLocale == 'nl' and this.theme.theme_logo_nl is not empty %}
-				<img src="{{ this.theme.theme_logo_nl|media }}" class="img-fluid w-50">
+				<img src="{{ this.theme.theme_logo_nl|media }}" class="img-fluid w-75">
 			{% else %}
-				<img src="{{ this.theme.theme_logo_uk|media }}" class="img-fluid w-50">
+				<img src="{{ this.theme.theme_logo_uk|media }}" class="img-fluid w-75">
 			{% endif %}	             
 		  </a>
-		  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+		  <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="fa fa-bars"></span>
 		  </button>
 	  
 		  <div class="collapse navbar-collapse text-center" id="navbarsExample09">
 			<ul class="navbar-nav ml-auto">
+                <li class="nav-item {% if this.page.id == 'home' %}active{% endif %}">
+                    <a class="nav-link" href="{{ 'home'|page }}">{{ 'Home'|_ }}</a></li>
                 <li class="nav-item {% if this.page.id == 'about' %}active{% endif %}">
                     <a class="nav-link" href="{{ 'about'|page }}">{{ 'About us'|_ }}</a></li>
                 <li class="nav-item {% if this.page.id == 'trainingscourses' %}active{% endif %}">
@@ -39,8 +41,8 @@ description = "Header with TopBar and Navigation"
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
                         <a href="#" class="dropdown-item" data-request="onSwitchLocale" data-request-data="locale: 'en'">EN</a>  
-                        <a href="#" class="dropdown-item" data-request="onSwitchLocale" data-request-data="locale: 'nl'">NL <acidjs-xflag code="de" size="small"></acidjs-xflag></a> 
-                    </div>
+                        <a href="#" class="dropdown-item" data-request="onSwitchLocale" data-request-data="locale: 'nl'">NL</a> 
+                    </div-->
                 </li>
 			</ul>
 		  </div>

@@ -1,4 +1,9 @@
 description = "Meta Partial"
+
+[localePicker]
+forceUrl = 1
+
+[alternateHrefLangElements]
 ==
 <?php
 function onStart()
@@ -66,7 +71,7 @@ function onStart()
 {% endif %}
 
 {# Favicon #}
-<link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
+<link rel="icon" type="image/png" href="{{ 'favicon.png'|media }}">
 {# CSS #}
 <link href="{{ [
   'assets/plugins/bootstrap/css/bootstrap.min.css',
