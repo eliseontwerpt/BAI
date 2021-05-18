@@ -35,7 +35,7 @@ form:
             # TABBLAD Bedrijfsgegevens
             emailadres:
                 label: 'E-mail'
-                default: 'bai@bai.nl'
+                default: 'info@baigroningen.nl'
                 tab: 'Bedrijfsgegevens'
             bedrijfsnaam_details_section:
                 label: Aanschrijftitel
@@ -78,11 +78,13 @@ form:
                 label: 'Primary color'
                 type: colorpicker
                 assetVar: primary-color
+                default: #941A1D
                 tab: 'Kleurenschema'
             theme_secondary_color:
                 label: 'Secondary color'
                 type: colorpicker
                 assetVar: secondary-color
+                default: #DFB05A
                 tab: 'Kleurenschema'
             theme_third_color:
                 label: 'Third color'
