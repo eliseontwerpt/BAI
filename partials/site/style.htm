@@ -9,7 +9,11 @@
     }
 
     .slider {
-        background: url("{{ this.theme.theme_background_image|media }}") no-repeat 50% 30%;  
+        {% if this.theme.theme_background_image is not empty %}
+            background: url("{{ this.theme.theme_background_image|media }}") no-repeat 50% 30%;  
+        {% else %}
+            background: url("{{ 'assets/images/achtergrond.jpg'|theme }}") no-repeat 50% 30%;
+        {% endif %} 
         background-size: cover;
     }
     #navbar{
