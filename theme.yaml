@@ -19,6 +19,7 @@ form:
                 label: 'Achtergrond Homepagina'
                 type: mediafinder
                 mode: image
+                default: '/themes/eliseontwerpt-bai/assets/images/achtergrond.jpg'
                 tab: 'Main'
             theme_logo_uk:
                 label: 'Logo'
