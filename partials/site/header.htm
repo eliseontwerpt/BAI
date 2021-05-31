@@ -9,11 +9,11 @@ description = "Header with TopBar and Navigation"
 		<div class="container">
 		  <a class="navbar-brand" href="{{ 'home'|page }}">		  	
             {% if activeLocale == 'nl' and this.theme.theme_logo_nl is not empty %}
-                <img src="{{ this.theme.theme_logo_nl|media }}" class="img-fluid w-75">
+                <img src="{{ this.theme.theme_logo_nl|media }}" class="img-fluid w-75" id="nav-header">
             {% elseif this.theme.theme_logo_uk is not empty %}
-                <img src="{{ this.theme.theme_logo_uk|media }}" class="img-fluid w-75">
+                <img src="{{ this.theme.theme_logo_uk|media }}" class="img-fluid w-75" id="nav-header">
             {% else %}
-                <img src="{{ 'assets/images/logo.png'|theme }}" class="img-fluid w-75">
+                <img src="{{ 'assets/images/logo.png'|theme }}" class="img-fluid w-75" id="nav-header">
             {% endif %}		           
 		  </a>
 		  <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
